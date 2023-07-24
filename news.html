@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="styleesheet" HREF="news.css">
+<script language="javascript">
+function addnews(){
+	var b=document.form.ha.value
+	var a=document.form.hi.value;
+	
+	 var c=document.createElement("h1");
+	var d=document.createElement("p");
+	//console.log(a);
+	localStorage.setItem("textvalue",a);
+	localStorage.setItem("textvaluee",b);
+	localStorage.setItem("textvalue1",c);
+	localStorage.setItem("textvaluee2",d);
+	return false;
+	}
+</script>
+</head>
+<body>
+<div id="">
+<h1>AC NEWS</h1>
+<form name="form" action="news2.html">
+</div>
+<input type="text" class="heading" name="hi"> <br>
+<input type="text" id="fullnews" name="ha">
+<input type="button" value="add" onclick="addnews()">
+<div id="news">
+</form>
+</div>
+</div>
+</body>
+</html>
